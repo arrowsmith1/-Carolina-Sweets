@@ -3,349 +3,699 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daisy Lavoy | Premium Companion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Thea Summers — Luxury Adult Film Star, Companion & World Travel Portfolio. Private encounters, dinner dates, and bespoke companion experiences.">
+    <title>Thea Summers | Premium Companion & Travel Experience</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts Preconnect & Styling -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Primary Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+    <!-- ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== -->
     <header>
-        <nav class="navbar">
+        <nav class="navbar" id="navbar">
+            <div class="container nav-container">
 
-            <div class="logo">Daisy Lavoy</div>
+                <a href="#" class="logo" aria-label="Thea Summers Homepage">
+                    Thea <span>Summers</span>
+                </a>
 
-            <div class="menu-toggle" id="menuToggle">
-                <span></span>
-                <span></span>
-                <span></span>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="navLinks">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-links" id="navLinks" role="navigation">
+                    <li class="nav-links-brand-item">
+                        <div class="nav-links-brand">Thea <span>Summers</span></div>
+                    </li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#travel">Travel</a></li>
+                    <li><a href="#booking">Booking</a></li>
+                    <li><a href="#policy">Policy</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#booking" class="nav-cta-btn">Book Now</a></li>
+                </ul>
+
             </div>
-
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <!-- <li><a href="#travel">Travel</a></li> -->
-                <li><a href="#booking">Booking</a></li>
-                <li><a href="#policy">Policy</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-
         </nav>
+
+        <div class="mobile-backdrop" id="mobileBackdrop"></div>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Luxury Experience Beyond Expectations</h1>
-            <p>Elegant. Discreet. Unforgettable.</p>
-            <a href="#booking" class="btn">Book Now</a>
-        </div>
-    </section>
-
-    <section id="about" class="section">
-        <h2>About Me</h2>
-
-        <div class="about-content">
-            <img src="images/profile.PNG" alt="">
-            <div>
-                <p>
-                    Welcome to my private website.
-                    I'm an adult performer born and raised in the St. Louis, MO area but currently in Boston, MA,
-                    offering exclusive experiences for those who appreciate quality time and
-                    refined company. Please note that I'm value thoughtful planning.
-                    Same-day or last-minute requests are difficult to accommodate, so advance notice
-                    is strongly encouraged to ensure availability. For those seeking a more
-                    personalized and elevated experience, FMTY arrangements can be made with
-                    proper planning. To maintain a safe, respectful, and seamless experience for
-                    everyone, screening and verification are required prior to confirming any appointment.
-                </p>
-
-                <p>
-                    Whether for dinner dates, travel companionship
-                    or private encounters, my focus is creating
-                    authentic chemistry and exceptional moments.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section id="experience" class="section">
-        <h2>Experiences & Rates</h2>
-
-        <div class="cards">
-
-            <div class="card">
-                <h3>The Tease</h3>
-                <p>30 minutes - $600</p>
-                <h4>A fleeting encounter that lingers long after. A taste of what could
-                    be brief, electric, and unforgettable.
-                </h4>
-            </div>
-
-            <div class="card">
-                <h3>First Light</h3>
-                <p>1 hour - $1,000</p>
-                <h4>A soft beginning full of promise. Unrushed, dreamy, and just long enough to
-                    spark a deeper connection.
-                </h4>
-            </div>
-
-            <div class="card">
-                <h3>Lingering Flame</h3>
-                <p>90 minutes - $1,500</p>
-                <h4>Just enough time for the spark to catch where every touch lingers and
-                    curiosity turns to chemistry.
-                </h4>
-            </div>
-
-            <div class="card">
-                <h3>Savor the Spark</h3>
-                <p>2 hours - $1,800</p>
-                <h4>Time melts away as we savor every laugh, glance, and kiss.</h4>
-            </div>
-
-            <div class="card">
-                <h3>Table for Two</h3>
-                <p>3 hours - $3,000</p>
-                <h4>For slow sips, deeper conversation, and lingering glances.</h4>
-            </div>
-
-            <div class="card">
-                <h3>Moonlit Murmurs</h3>
-                <p>4 hours - $3,500</p>
-                <h4>An elegant evening. Fine dining, wine, and the pleasure of unhurried connection.</h4>
-            </div>
-
-            <div class="card">
-                <h3>Afterglow Affair</h3>
-                <p>Up to 14 hours - $8,000</p>
-                <h4>Midnight whispers and morning rituals. An unforgettable evening with
-                    dinner and breakfast.
-                </h4>
-
-                <div style="padding-top: 10px;">
-                    <h3>Overnight - $5,500</h3>
-                    <p>For overnight engagements, I require my own bed, private room, or
-                        separate hotel accommodation. Overnight does not imply sharing a bed.
-                    </p>
-                    <h4>I require eight full hours of uninterrupted rest.</h4>
+    <main>
+        <!-- ==========================================================================
+           HERO SECTION
+           ========================================================================== -->
+        <section class="hero" id="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <span class="text-eyebrow">Luxury Companion & Travel Experience</span>
+                <h1 class="hero-title">Luxury Experience Beyond Expectations</h1>
+                <p class="hero-subtitle">Elegant. Discreet. Unforgettable.</p>
+                <div class="hero-cta-group">
+                    <a href="#booking" class="btn-primary">
+                        <i class="far fa-calendar-alt"></i> Request Booking
+                    </a>
+                    <a href="#experience" class="btn-secondary">
+                        Explore Rates
+                    </a>
                 </div>
             </div>
 
-            <div class="card">
-                <h3>The Ultimate</h3>
-                <p>An Entire Month - $85,000</p>
-                <h4>I am yours and only yours! Contact for complete details</h4>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="gallery" class="section">
-        <h2>Gallery</h2>
-
-        <div class="gallery">
-            <img src="images/IMG_4758.JPG.jpeg">
-            <img src="images/IMG_4751.JPG.jpeg">
-            <img src="images/IMG_4752.JPG.jpeg">
-            <img src="images/IMG_4755.JPG.jpeg">
-            <img src="images/IMG_4756.JPG.jpeg">
-            <img src="images/IMG_4757.JPG.jpeg">
-        </div>
-    </section>
-
-    <!-- <section id="travel" class="section">
-        <h2>Travel Schedule</h2>
-
-        <div class="travel-list">
-
-            <div class="travel-card">
-                <h3>Miami</h3>
-                <p>Aug 10 - Aug 15</p>
-            </div>
-
-            <div class="travel-card">
-                <h3>New York</h3>
-                <p>Sep 01 - Sep 05</p>
-            </div>
-
-            <div class="travel-card">
-                <h3>Los Angeles</h3>
-                <p>Oct 10 - Oct 14</p>
-            </div>
-
-        </div>
-    </section> -->
-
-    <section id="booking" class="section">
-        <h2>Booking Request</h2>
-
-        <form action="https://formsubmit.co/book.missdaisylavoyvip@protonmail.com" method="post">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_subject" value="New Booking Form Submission with Daisy Lavoy!">
-            <input type="hidden" name="_template" value="box">
-            <div class="bookme-form">
-                <label>FullName:</label>
-                <input type="text" placeholder="Fullname" name="fullname" required>
-            </div>
-
-            <div class="bookme-form">
-                <label>Phone Number (I'm not going to call you):</label>
-                <input type="text" name="phone number" placeholder="Phone Number (I'm not going to call you)" required>
-            </div>
-
-            <div class="bookme-form">
-                <label>Email Address:</label>
-                <input type="text" name="email address" placeholder="Email Address" required>
-            </div>
-
-            <div class="bookme-form">
-                <label>Confirm Email Address:</label>
-                <input type="text" name="confirm email address" placeholder="Confirm Email Address" required>
-            </div>
-
-            <div class="bookme-form">
-                <label>Duration:</label>
-                <select name="duration" required>
-                    <option value="1h">1H</option>
-                    <option value="2h">2H</option>
-                    <option value="3h">3H</option>
-                    <option value="4h">4H</option>
-                    <option value="overnight">Overnight</option>
-                    <option value="24h">24H</option>
-                </select>
-            </div>
-
-            <div class="bookme-form">
-                <label>Preferred Date:</label>
-                <input type="date" name="preferred date" placeholder="Confirm Email Address" required>
-            </div>
-
-            <div class="bookme-form">
-                <label>Screening ID:</label>
-                <select name="screening id" required>
-                    <option value="selfie">Selfie + ID/DL</option>
-                    <option value="linkedin">Linkedin Profile</option>
-                </select>
-            </div>
-
-            <div class="bookme-form">
-                <label>Preferred Payment Method:</label>
-                <select name="payment method" required>
-                    <option value="btc">Bitcoin (BTC)</option>
-                    <option value="venmo">Venmo</option>
-                    <option value="bank">Bank Transer</option>
-                    <option value="chime">Chime</option>
-                    <option value="apple-pay">Apple Pay</option>
-                </select>
-            </div>
-
-            <div class="bookme-form">
-                <label>Your Inquiry Message:</label>
-                <textarea name="message" class="text-area" placeholder="Your Inquiry Message" required></textarea>
-            </div>
-
-            <button>Send</button>
-        </form>
-    </section>
-
-    <section id="policy" class="section">
-        <h2>Schedule & Policies</h2>
-
-        <ul class="policy-list">
-            <li>A 50% deposit is required to secure all booking dates, regardless of location.
-                Bookings are not confirmed until the deposit has been received. Accepted payment
-                methods include Venmo, Bitcoin (BTC),
-                Apple Pay, Bank Transfer, and Chime.
-            </li>
-            <li>If a client chooses to cancel a confirmed booking, a cancellation fee of 35% of the
-                amount already paid will apply. The remaining balance of the deposit
-                will be refunded to the original payment method.
-            </li>
-            <!-- <li>Verification may be required.</li>
-            <li>Travel arrangements discussed individually.</li>
-            <li>Deposits may be required for extended bookings.</li> -->
-        </ul>
-    </section>
-
-    <section class="faq section">
-        <h2>FAQ</h2>
-
-        <div class="faq-item">
-            <button class="faq-btn">How far in advance should I book?</button>
-            <div class="faq-content">
-                24-48 hours is preferred.
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <button class="faq-btn">Do you travel?</button>
-            <div class="faq-content">
-                Yes I do.
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="section contact">
-
-        <h2>Let's Connect</h2>
-
-        <p class="contact-text">
-            Follow my journey or get in touch through my official channels.
-        </p>
-
-        <div class="social-links">
-            <a href="mailto:book.missdaisylavoyvip@protonmail.com">
-                <i class="fas fa-envelope"></i>
-                Email
+            <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+                <div class="scroll-mouse">
+                    <div class="scroll-wheel"></div>
+                </div>
+                <span>Scroll</span>
             </a>
+        </section>
 
-            <!-- <a href="https://www.instagram.com/daisylavoy?igsh=aDgyZ3JmOWxudXdq" target="_blank">
-                <i class="fab fa-instagram"></i>
-                Instagram
-            </a> -->
+        <!-- ==========================================================================
+           ABOUT SECTION
+           ========================================================================== -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image-wrapper">
+                        <img src="images/profile.jpeg" alt="Thea Summers Luxury Companion Portrait" class="about-image" loading="lazy">
+                    </div>
 
-            <!-- <a href="https://x.com/DaisyLavoy" target="_blank">
-                <i class="fab fa-x-twitter"></i>
-                X
-            </a> -->
+                    <div class="about-content">
+                        <span class="text-eyebrow">An Unforgettable Encounter</span>
+                        <h2>About Thea Summers</h2>
+                        <div class="about-text">
+                            <p>
+                                Welcome to my private website. I am <strong>Thea Summers</strong>, an adult film star and companion traveling to select cities worldwide. I am excited about the prospect of new adventures and connecting with discerning clients during my upcoming trips.
+                            </p>
+                            <p>
+                                Currently arranging my upcoming schedule — if you are interested in spending memorable, unhurried time together, please feel free to reach out to discuss further details.
+                            </p>
+                            
+                            <div class="about-highlight-box">
+                                <p>
+                                    "Whether for intimate dinner dates, travel companionship, or private encounters, my singular focus is creating authentic chemistry, discreet elegance, and exceptional moments."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- ==========================================================================
+           EXPERIENCE / RATES SECTION
+           ========================================================================== -->
+        <section id="experience" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="text-eyebrow">Rates & Options</span>
+                    <h2>Curated Experiences</h2>
+                    <p>Tailored encounters designed for deep connection, relaxation, and memorable moments.</p>
+                </div>
+
+                <div class="rates-grid">
+                    <!-- Rate Card 2 -->
+                    <div class="rate-card">
+                        <div class="rate-header">
+                            <h3 class="rate-title">First Light</h3>
+                            <div class="rate-price-tag">1 hour — $1,000</div>
+                        </div>
+                        <p class="rate-description">
+                            A soft beginning full of promise. Unrushed, dreamy, and just long enough to spark a deeper connection.
+                        </p>
+                        <div class="rate-card-action">
+                            <a href="#booking" class="btn-rate-book">Select Option</a>
+                        </div>
+                    </div>
+
+                    <!-- Rate Card 3 -->
+                    <div class="rate-card">
+                        <div class="rate-header">
+                            <h3 class="rate-title">Lingering Flame</h3>
+                            <div class="rate-price-tag">90 minutes — $1,500</div>
+                        </div>
+                        <p class="rate-description">
+                            Just enough time for the spark to catch where every touch lingers and curiosity turns to chemistry.
+                        </p>
+                        <div class="rate-card-action">
+                            <a href="#booking" class="btn-rate-book">Select Option</a>
+                        </div>
+                    </div>
+
+                    <!-- Rate Card 4 -->
+                    <div class="rate-card">
+                        <div class="rate-header">
+                            <h3 class="rate-title">Savor the Spark</h3>
+                            <div class="rate-price-tag">2 hours — $2,000</div>
+                        </div>
+                        <p class="rate-description">
+                            Time melts away as we savor every laugh, glance, and kiss.
+                        </p>
+                        <div class="rate-card-action">
+                            <a href="#booking" class="btn-rate-book">Select Option</a>
+                        </div>
+                    </div>
+
+                    <!-- Rate Card 5 -->
+                    <div class="rate-card">
+                        <div class="rate-header">
+                            <h3 class="rate-title">Table for Two</h3>
+                            <div class="rate-price-tag">3 hours — $3,000</div>
+                        </div>
+                        <p class="rate-description">
+                            For slow sips, deeper conversation, and lingering glances.
+                        </p>
+                        <div class="rate-card-action">
+                            <a href="#booking" class="btn-rate-book">Select Option</a>
+                        </div>
+                    </div>
+
+                    <!-- Rate Card 6 -->
+                    <div class="rate-card">
+                        <div class="rate-header">
+                            <h3 class="rate-title">Moonlit Murmurs</h3>
+                            <div class="rate-price-tag">4 hours — $4,000</div>
+                        </div>
+                        <p class="rate-description">
+                            An elegant evening. Fine dining, wine, and the pleasure of unhurried connection.
+                        </p>
+                        <div class="rate-card-action">
+                            <a href="#booking" class="btn-rate-book">Select Option</a>
+                        </div>
+                    </div>
+
+                    <!-- Rate Card 7 (FEATURED) -->
+                    <div class="rate-card featured">
+                        <span class="badge-featured">Most Popular</span>
+                        <div class="rate-header">
+                            <h3 class="rate-title">Afterglow Affair</h3>
+                            <div class="rate-price-tag">Up to 14 hours — $8,500</div>
+                        </div>
+                        <p class="rate-description">
+                            Midnight whispers and morning rituals. An unforgettable evening with dinner and breakfast.
+                        </p>
+                        <div class="rate-card-action">
+                            <a href="#booking" class="btn-rate-book">Select Option</a>
+                        </div>
+                    </div>
+
+                    <!-- Rate Card 8 -->
+                    <div class="rate-card">
+                        <div class="rate-header">
+                            <h3 class="rate-title">The Ultimate</h3>
+                            <div class="rate-price-tag">An Entire Month — $85,000</div>
+                        </div>
+                        <p class="rate-description">
+                            I am yours and only yours! Contact for complete details and extended travel arrangements.
+                        </p>
+                        <div class="rate-card-action">
+                            <a href="#booking" class="btn-rate-book">Select Option</a>
+                        </div>
+                    </div>
+
+                    <!-- Overnight Accommodations Special Card -->
+                    <div class="overnight-card">
+                        <div class="overnight-info">
+                            <span class="text-eyebrow">Overnight Guidelines</span>
+                            <h3>Overnight Engagements</h3>
+                            <p class="price">$8,500</p>
+                        </div>
+                        <div class="overnight-rules">
+                            <p>
+                                For overnight engagements, I require my own bed, private room, or separate hotel accommodation. Overnight does not imply sharing a bed.
+                            </p>
+                            <p>
+                                <strong>Requirement:</strong> I require eight full hours of uninterrupted rest.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- ==========================================================================
+           GALLERY SECTION & LIGHTBOX
+           ========================================================================== -->
+        <section id="gallery" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="text-eyebrow">Portfolio</span>
+                    <h2>Gallery</h2>
+                    <p>A glimpse into my world, travels, and personal moments. Click any photograph for full-screen view.</p>
+                </div>
+
+                <div class="gallery-grid" id="galleryGrid">
+                    <div class="gallery-item" data-index="0" data-src="images/IMG_4758.JPG.PNG">
+                        <img src="images/IMG_4758.JPG.PNG" alt="Thea Summers Luxury Portrait 1" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-icon"><i class="fas fa-expand"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-index="1" data-src="images/IMG_4751.JPG.PNG">
+                        <img src="images/IMG_4751.JPG.PNG" alt="Thea Summers Luxury Portrait 2" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-icon"><i class="fas fa-expand"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-index="1" data-src="images/IMG_8757.JPG.PNG">
+                        <img src="images/IMG_8757.JPG.PNG" alt="Thea Summers Luxury Portrait 2" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-icon"><i class="fas fa-expand"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-index="4" data-src="images/IMG_4756.JPG.PNG">
+                        <img src="images/IMG_4756.JPG.PNG" alt="Thea Summers Luxury Portrait 5" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-icon"><i class="fas fa-expand"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-index="5" data-src="images/IMG_4757.JPG.PNG">
+                        <img src="images/IMG_4757.JPG.PNG" alt="Thea Summers Luxury Portrait 6" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-icon"><i class="fas fa-expand"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-index="3" data-src="images/IMG_4755.JPG.PNG">
+                        <img src="images/IMG_4755.JPG.PNG" alt="Thea Summers Luxury Portrait 4" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-icon"><i class="fas fa-expand"></i></div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="gallery-item" data-index="2" data-src="images/IMG_4752.JPG.PNG">
+                        <img src="images/IMG_4752.JPG.PNG" alt="Thea Summers Luxury Portrait 3" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-icon"><i class="fas fa-expand"></i></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- ==========================================================================
+           TRAVEL SCHEDULE SECTION
+           ========================================================================== -->
+        <section id="travel" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="text-eyebrow">Tour Dates & City Schedule</span>
+                    <h2>Travel Schedule</h2>
+                    <p>Upcoming city tours, primary base location, and worldwide Fly-Me-To-You (FMTY) travel availability.</p>
+                </div>
+
+                <div class="travel-grid">
+
+                    <!-- Upcoming Tour 1: New York, NY -->
+                    <div class="travel-card featured-upcoming">
+                        <span class="badge-status badge-upcoming">Upcoming</span>
+                        <div class="travel-card-header">
+                            <div class="travel-icon icon-upcoming"><i class="fas fa-plane-arrival"></i></div>
+                            <div>
+                                <span class="location-label">Upcoming City Tour</span>
+                                <h3 class="location-city">New York <span>NY</span></h3>
+                            </div>
+                        </div>
+                        <div class="travel-details">
+                            <div class="travel-status status-upcoming"><i class="far fa-calendar-alt"></i> Sep 01 - Sep 05</div>
+                            <p class="travel-availability">Tour dates confirmed • Request booking in advance.</p>
+                        </div>
+                        <a href="#booking" class="btn-primary btn-travel-book">
+                            Request Booking
+                        </a>
+                    </div>
+
+                    <!-- Upcoming Tour 2: Los Angeles, CA -->
+                    <div class="travel-card featured-upcoming">
+                        <span class="badge-status badge-upcoming">Upcoming</span>
+                        <div class="travel-card-header">
+                            <div class="travel-icon icon-upcoming"><i class="fas fa-plane-arrival"></i></div>
+                            <div>
+                                <span class="location-label">Upcoming City Tour</span>
+                                <h3 class="location-city">Los Angeles <span>CA</span></h3>
+                            </div>
+                        </div>
+                        <div class="travel-details">
+                            <div class="travel-status status-upcoming"><i class="far fa-calendar-alt"></i> Oct 10 - Oct 14</div>
+                            <p class="travel-availability">Tour dates confirmed • Request booking in advance.</p>
+                        </div>
+                        <a href="#booking" class="btn-primary btn-travel-book">
+                            Request Booking
+                        </a>
+                    </div>
+
+                    <!-- Primary Base Location Card: Detroit, MI -->
+                    <div class="travel-card card-primary-base">
+                        <span class="badge-status badge-base">Primary Base</span>
+                        <div class="travel-card-header">
+                            <div class="travel-icon icon-base"><i class="fas fa-location-dot"></i></div>
+                            <div>
+                                <span class="location-label">Primary Base Location</span>
+                                <h3 class="location-city">Detroit <span>MI</span></h3>
+                            </div>
+                        </div>
+                        <div class="travel-details">
+                            <div class="travel-status"><i class="far fa-calendar"></i> Aug 24 - Aug 27</div>
+                            <p class="travel-availability">Primary Base Location • Contact for current schedule & availability.</p>
+                        </div>
+                        <a href="#booking" class="btn-rate-book">
+                            Contact for Availability
+                        </a>
+                    </div>
+
+                    <!-- Past Tour Card: Miami, FL -->
+                    <div class="travel-card card-past-tour">
+                        <span class="badge-status badge-past">Past Tour</span>
+                        <div class="travel-card-header">
+                            <div class="travel-icon icon-past"><i class="fas fa-history"></i></div>
+                            <div>
+                                <span class="location-label">Past City Tour</span>
+                                <h3 class="location-city">Miami <span>FL</span></h3>
+                            </div>
+                        </div>
+                        <div class="travel-details">
+                            <div class="travel-status status-past"><i class="far fa-calendar"></i> Aug 10 - Aug 15</div>
+                            <p class="travel-availability">Tour dates completed • Historical schedule record.</p>
+                        </div>
+                        <a href="#booking" class="btn-rate-book btn-muted">
+                            Request Future Tour
+                        </a>
+                    </div>
+
+                    <!-- Fly-Me-To-You (FMTY) & Worldwide Travel Card -->
+                    <div class="fmty-card">
+                        <div class="fmty-content">
+                            <div class="fmty-badge">Open for FMTY</div>
+                            <h3>Fly-Me-To-You (FMTY) & Worldwide Travel</h3>
+                            <p class="fmty-text">
+                                Available for Out-of-State & International Travel Worldwide (FMTY). Travel arrangements discussed individually for extended engagements and private tours.
+                            </p>
+                        </div>
+                        <a href="#booking" class="btn-secondary btn-fmty">
+                            <i class="fas fa-globe-americas"></i> Inquire About FMTY
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- ==========================================================================
+           BOOKING FORM SECTION
+           ========================================================================== -->
+        <section id="booking" class="section">
+            <div class="container container-narrow">
+                <div class="section-header">
+                    <span class="text-eyebrow">Reservation Intake</span>
+                    <h2>Booking Request</h2>
+                    <p>Please complete the form below to initiate a booking request. All communications are strictly confidential.</p>
+                </div>
+
+                <div class="booking-wrapper">
+                    <form action="https://formsubmit.co/thesummersvip@gmail.com" method="post" class="booking-form" id="bookingForm">
+                        <!-- FormSubmit Hidden Parameters (DO NOT MODIFY) -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_subject" value="New Booking Form Submission with Thea Summers!">
+                        <input type="hidden" name="_template" value="box">
+
+                        <div class="form-group">
+                            <label for="fullname">Full Name *</label>
+                            <input type="text" id="fullname" name="fullname" class="form-control" placeholder="Enter your full name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number (Text preferred) *</label>
+                            <input type="tel" id="phone" name="phone number" class="form-control" placeholder="+1 (555) 000-0000" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email address" class="form-control" placeholder="yourname@domain.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="confirm-email">Confirm Email Address *</label>
+                            <input type="email" id="confirm-email" name="confirm email address" class="form-control" placeholder="Re-enter your email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="duration">Requested Duration *</label>
+                            <select id="duration" name="duration" class="form-control" required>
+                                <option value="1h">1 Hour ($1,000)</option>
+                                <option value="90m">90 Minutes ($1,500)</option>
+                                <option value="2h">2 Hours ($2,000)</option>
+                                <option value="3h">3 Hours ($3,000)</option>
+                                <option value="4h">4 Hours ($4,000)</option>
+                                <option value="overnight">Overnight ($8,500)</option>
+                                <option value="24h">24 Hours / Extended</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="preferred-date">Preferred Date *</label>
+                            <input type="date" id="preferred-date" name="preferred date" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="screening-id">Screening Method *</label>
+                            <select id="screening-id" name="screening id" class="form-control" required>
+                                <option value="selfie">Selfie + Photo ID / Driver's License</option>
+                                <option value="linkedin">LinkedIn Profile Link</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="payment-method">Preferred Payment Method *</label>
+                            <select id="payment-method" name="payment method" class="form-control" required>
+                                <option value="btc">Bitcoin (BTC)</option>
+                                <option value="venmo">Venmo</option>
+                                <option value="bank">Bank Transfer</option>
+                                <option value="chime">Chime</option>
+                                <option value="apple-pay">Apple Pay</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="message">Your Inquiry Message *</label>
+                            <textarea id="message" name="message" class="form-control" placeholder="Please include your location, preferred time of day, and any specific requests..." required></textarea>
+                        </div>
+
+                        <div class="form-submit-wrapper">
+                            <button type="submit" class="btn-primary btn-submit">
+                                <i class="fas fa-paper-plane"></i> Send Booking Request
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- ==========================================================================
+           POLICY SECTION
+           ========================================================================== -->
+        <section id="policy" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="text-eyebrow">Terms & Deposit</span>
+                    <h2>Schedule & Policies</h2>
+                    <p>Clear rules and guidelines to ensure a smooth, professional arrangement for both parties.</p>
+                </div>
+
+                <div class="policy-grid">
+                    <div class="policy-card">
+                        <div class="policy-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h3>50% Booking Deposit</h3>
+                        <p>
+                            A 50% deposit is required to secure all booking dates, regardless of location. Bookings are not confirmed until the deposit has been received. Accepted payment methods include Venmo, Bitcoin (BTC), Apple Pay, Bank Transfer, and Chime.
+                        </p>
+                    </div>
+
+                    <div class="policy-card">
+                        <div class="policy-icon">
+                            <i class="fas fa-undo-alt"></i>
+                        </div>
+                        <h3>Cancellation Terms</h3>
+                        <p>
+                            If a client chooses to cancel a confirmed booking, a cancellation fee of 35% of the amount already paid will apply. The remaining balance of the deposit will be refunded to the original payment method.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- ==========================================================================
+           FAQ ACCORDION SECTION
+           ========================================================================== -->
+        <section id="faq" class="section">
+            <div class="container container-narrow">
+                <div class="section-header">
+                    <span class="text-eyebrow">Clarifications</span>
+                    <h2>Frequently Asked Questions</h2>
+                </div>
+
+                <div class="faq-list" id="faqList">
+
+                    <div class="faq-item">
+                        <button class="faq-btn" aria-expanded="false" aria-controls="faq-ans-1">
+                            <span>How far in advance should I book?</span>
+                            <i class="fas fa-chevron-down faq-chevron"></i>
+                        </button>
+                        <div class="faq-content" id="faq-ans-1">
+                            <p>24 to 48 hours advance notice is preferred to properly arrange schedules and accommodate travel logistics.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-btn" aria-expanded="false" aria-controls="faq-ans-2">
+                            <span>Do you travel?</span>
+                            <i class="fas fa-chevron-down faq-chevron"></i>
+                        </button>
+                        <div class="faq-content" id="faq-ans-2">
+                            <p>Yes I do travel nationally and internationally for extended dates and overnight engagements.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- ==========================================================================
+           CONTACT & REVIEWS SECTION
+           ========================================================================== -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Direct Contact</h3>
+                        <p>Get in touch directly via secure official email for private inquiries.</p>
+                        <a href="mailto:book.thesummersvip@gmail.com" class="btn-primary" aria-label="Send Email">
+                           <i class="fas fa-envelope"></i> Email Me
+                        </a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <h3>Instagram</h3>
+                        <p>Follow my official Instagram account for updates and portfolio highlights.</p>
+                        <a href="https://www.instagram.com/theasummersxo?igsi=MWloczRzZW03Ym80Yg==" target="_blank" rel="noopener noreferrer" class="btn-primary" aria-label="Visit Instagram Profile">
+                           <i class="fab fa-instagram"></i> @theasummersxo
+                        </a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-x-twitter"></i>
+                        </div>
+                        <h3>X (Twitter)</h3>
+                        <p>Follow my official X account for announcements and tour updates.</p>
+                        <a href="https://x.com/Theasummerss" target="_blank" rel="noopener noreferrer" class="btn-primary" aria-label="Visit X Profile">
+                           <i class="fab fa-x-twitter"></i> @Theasummerss
+                        </a>
+                    </div>
+                </div>
+
+                <div class="reviews-box">
+                    <span class="text-eyebrow">Client Feedback</span>
+                    <h3>Verified Reviews</h3>
+                    <p>Read verified reviews and authentic experiences from past clients on The Erotic Review.</p>
+                    <a href="http://www.theeroticreview.com/link/link.asp?ID=43587" target="_blank" rel="noopener noreferrer" class="btn-ter">
+                        <i class="fas fa-star"></i> Read My Reviews on The Erotic Review
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">Thea Summers</div>
+            <ul class="footer-nav">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#travel">Travel</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#policy">Policy</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="footer-copyright">
+                <p>&copy; 2026 Thea Summers. All Rights Reserved. Luxury Companion Portfolio.</p>
+            </div>
         </div>
-
-    </section>
-
-    <section class="section ter-section">
-
-        <h2>Verified Reviews</h2>
-
-        <p class="ter-text">
-            Read verified reviews and experiences from clients on The Erotic Review.
-        </p>
-
-        <a href="http://www.theeroticreview.com/link/link.asp?ID=43587" target="_blank" rel="noopener noreferrer"
-            class="ter-btn">
-
-            ⭐ Read My Reviews on The Erotic Review
-
-        </a>
-
-    </section>
-
-    <footer>
-
-        <div class="footer-social">
-            <!-- <a href="https://www.instagram.com/daisylavoy?igsh=aDgyZ3JmOWxudXdq"><i class="fab fa-instagram"></i></a> -->
-            <!-- <a href="https://x.com/DaisyLavoy"><i class="fab fa-x-twitter"></i></a> -->
-        </div>
-
-        <p>© 2026 Daisy Lavoy. All Rights Reserved.</p>
-
     </footer>
 
+    <!-- ==========================================================================
+       LIGHTBOX MODAL (DYNAMIC VANILLA JS INTERACTION)
+       ========================================================================== -->
+    <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Image Gallery Lightbox">
+        <div class="lightbox-header">
+            <span class="lightbox-counter" id="lightboxCounter">1 / 6</span>
+            <button class="lightbox-close-btn" id="lightboxClose" aria-label="Close Lightbox Modal">&times;</button>
+        </div>
+
+        <div class="lightbox-body">
+            <button class="lightbox-nav-btn lightbox-prev" id="lightboxPrev" aria-label="Previous Image">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <img src="" alt="" class="lightbox-img" id="lightboxImg">
+            <button class="lightbox-nav-btn lightbox-next" id="lightboxNext" aria-label="Next Image">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <div class="lightbox-footer"></div>
+    </div>
+
+    <!-- Main JavaScript Logic -->
     <script src="js/script.js"></script>
 
 </body>
