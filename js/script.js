@@ -10,19 +10,51 @@ document.addEventListener("DOMContentLoaded", () => {
        -------------------------------------------------------------------------- */
     const travelLocations = [
         {
+            city: "Washington",
+            state: "DC",
+            type: "upcoming",
+            status: "Upcoming City Tour",
+            dates: "Oct 24 - Oct 28",
+            availability: "Tour dates confirmed • Request booking in advance."
+        },
+        {
+            city: "Boston",
+            state: "MA",
+            type: "upcoming",
+            status: "Upcoming City Tour",
+            dates: "Oct 28 - Oct 30",
+            availability: "Tour dates confirmed • Request booking in advance."
+        },
+        {
+            city: "Houston",
+            state: "TX",
+            type: "upcoming",
+            status: "Upcoming City Tour",
+            dates: "Nov 05 - Nov 07",
+            availability: "Tour dates confirmed • Request booking in advance."
+        },
+        {
+            city: "Dallas",
+            state: "TX",
+            type: "upcoming",
+            status: "Upcoming City Tour",
+            dates: "Nov 08 - Nov 10",
+            availability: "Tour dates confirmed • Request booking in advance."
+        },
+        {
             city: "New York",
             state: "NY",
             type: "upcoming",
             status: "Upcoming City Tour",
-            dates: "Sep 01 - Sep 05",
+            dates: "Dec 02 - Dec 05",
             availability: "Tour dates confirmed • Request booking in advance."
         },
         {
-            city: "Los Angeles",
-            state: "CA",
+            city: "Philadelphia",
+            state: "PA",
             type: "upcoming",
             status: "Upcoming City Tour",
-            dates: "Oct 10 - Oct 14",
+            dates: "Dec 06 - Dec 08",
             availability: "Tour dates confirmed • Request booking in advance."
         },
         {
@@ -30,16 +62,8 @@ document.addEventListener("DOMContentLoaded", () => {
             state: "MI",
             type: "primary",
             status: "Primary Base Location",
-            dates: "Aug 24 - Aug 27",
+            dates: "Primary Base",
             availability: "Primary Base Location • Contact for current schedule & availability."
-        },
-        {
-            city: "Miami",
-            state: "FL",
-            type: "past",
-            status: "Past Tour",
-            dates: "Aug 10 - Aug 15",
-            availability: "Tour dates completed • Historical schedule record."
         }
     ];
 
