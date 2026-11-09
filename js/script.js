@@ -1,74 +1,52 @@
 /**
- * THEA SUMMERS — LUXURY PORTFOLIO INTERACTION CONTROLLER
- * Vanilla ES6 JavaScript handling Navigation, Accordion, Lightbox Modal, and Touch Micro-interactions
+ * SARA JAY — LUXURY PORTFOLIO INTERACTION CONTROLLER
+ * Vanilla ES6 JavaScript handling Pricing Config, Navigation, Accordion, Lightbox Modal, and Touch Micro-interactions
  */
 
+/* --------------------------------------------------------------------------
+   SINGLE-PLACE PRICING CONFIGURATION
+   Change STARTING_HOURLY_RATE below to update all hourly/tiered rates across
+   the Experience section, About section, and Booking Form dropdown at once.
+   -------------------------------------------------------------------------- */
+const STARTING_HOURLY_RATE = 1200;
+
 document.addEventListener("DOMContentLoaded", () => {
-    
-    /* --------------------------------------------------------------------------
-       1. VERIFIED TRAVEL LOCATIONS DATA STRUCTURE (PRIORITIZED HIERARCHY)
-       -------------------------------------------------------------------------- */
-    const travelLocations = [
-        {
-            city: "Washington",
-            state: "DC",
-            type: "upcoming",
-            status: "Upcoming City Tour",
-            dates: "Oct 24 - Oct 28",
-            availability: "Tour dates confirmed • Request booking in advance."
-        },
-        {
-            city: "Boston",
-            state: "MA",
-            type: "upcoming",
-            status: "Upcoming City Tour",
-            dates: "Oct 28 - Oct 30",
-            availability: "Tour dates confirmed • Request booking in advance."
-        },
-        {
-            city: "Houston",
-            state: "TX",
-            type: "upcoming",
-            status: "Upcoming City Tour",
-            dates: "Nov 05 - Nov 07",
-            availability: "Tour dates confirmed • Request booking in advance."
-        },
-        {
-            city: "Dallas",
-            state: "TX",
-            type: "upcoming",
-            status: "Upcoming City Tour",
-            dates: "Nov 08 - Nov 10",
-            availability: "Tour dates confirmed • Request booking in advance."
-        },
-        {
-            city: "New York",
-            state: "NY",
-            type: "upcoming",
-            status: "Upcoming City Tour",
-            dates: "Dec 02 - Dec 05",
-            availability: "Tour dates confirmed • Request booking in advance."
-        },
-        {
-            city: "Philadelphia",
-            state: "PA",
-            type: "upcoming",
-            status: "Upcoming City Tour",
-            dates: "Dec 06 - Dec 08",
-            availability: "Tour dates confirmed • Request booking in advance."
-        },
-        {
-            city: "Detroit",
-            state: "MI",
-            type: "primary",
-            status: "Primary Base Location",
-            dates: "Primary Base",
-            availability: "Primary Base Location • Contact for current schedule & availability."
-        }
-    ];
 
     /* --------------------------------------------------------------------------
-       2. STICKY NAVBAR SCROLL EFFECT
+       0. APPLY STARTING HOURLY RATE ACROSS PAGE & BOOKING FORM
+       -------------------------------------------------------------------------- */
+    const formatCurrency = (amount) => `$${Math.round(amount).toLocaleString("en-US")}`;
+
+    // Update Rate Cards (e.g., "1 hour — $1,200")
+    document.querySelectorAll("[data-rate-multiplier]").forEach((el) => {
+        const multiplier = parseFloat(el.getAttribute("data-rate-multiplier") || "1");
+        const duration = el.getAttribute("data-rate-duration") || "";
+        const priceStr = formatCurrency(STARTING_HOURLY_RATE * multiplier);
+        el.textContent = duration ? `${duration} — ${priceStr}` : priceStr;
+    });
+
+    // Update Standalone Price Callouts (e.g., Overnight "$9,600")
+    document.querySelectorAll("[data-rate-only]").forEach((el) => {
+        const multiplier = parseFloat(el.getAttribute("data-rate-only") || "1");
+        el.textContent = formatCurrency(STARTING_HOURLY_RATE * multiplier);
+    });
+
+    // Update Inline Rate Mentions (e.g., "$1,200")
+    document.querySelectorAll("[data-rate-inline]").forEach((el) => {
+        const multiplier = parseFloat(el.getAttribute("data-rate-inline") || "1");
+        el.textContent = formatCurrency(STARTING_HOURLY_RATE * multiplier);
+    });
+
+    // Update Booking Form Duration Dropdown Options
+    document.querySelectorAll("[data-rate-option-multiplier]").forEach((opt) => {
+        const multiplier = parseFloat(opt.getAttribute("data-rate-option-multiplier") || "1");
+        const label = opt.getAttribute("data-rate-option-label") || "";
+        const priceStr = formatCurrency(STARTING_HOURLY_RATE * multiplier);
+        opt.textContent = `${label} (${priceStr})`;
+    });
+    
+    /* --------------------------------------------------------------------------
+       1. STICKY NAVBAR SCROLL EFFECT
        -------------------------------------------------------------------------- */
     const navbar = document.getElementById("navbar");
     
@@ -201,7 +179,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const galleryData = Array.from(galleryItems).map(item => ({
         src: item.getAttribute("data-src") || "",
-        alt: item.querySelector("img")?.getAttribute("alt") || "Thea Summers Portfolio Image"
+        alt: item.querySelector("img")?.getAttribute("alt") || "Sara Jay Portfolio Image"
     }));
 
     const updateLightboxContent = (index) => {
