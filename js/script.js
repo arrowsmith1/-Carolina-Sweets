@@ -1,5 +1,5 @@
 /**
- * SARA JAY — LUXURY PORTFOLIO INTERACTION CONTROLLER
+ * CAROLINA SWEETS — LUXURY PORTFOLIO INTERACTION CONTROLLER
  * Vanilla ES6 JavaScript handling Pricing Config, Navigation, Accordion, Lightbox Modal, and Touch Micro-interactions
  */
 
@@ -179,7 +179,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const galleryData = Array.from(galleryItems).map(item => ({
         src: item.getAttribute("data-src") || "",
-        alt: item.querySelector("img")?.getAttribute("alt") || "Sara Jay Portfolio Image"
+        alt: item.querySelector("img")?.getAttribute("alt") || "Carolina Sweets Portfolio Image"
     }));
 
     const updateLightboxContent = (index) => {
